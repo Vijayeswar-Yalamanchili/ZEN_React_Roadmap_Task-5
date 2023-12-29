@@ -31,7 +31,7 @@ function CartCard({product,setProduct}) {
                                             <h4 className="card-title">${e.price}</h4>
                                         </div>
                                         <div className='d-flex justify-content-between align-items-center'>
-                                            <p className="card-text">Brand :{e.brand}</p>
+                                            <p className="card-text">Brand : {e.brand}</p>
                                             <p className="card-text text-muted">Discount Offer : {e.discountPercentage}%</p>
                                         </div>
                                         <p className="card-text">{e.description}</p>
