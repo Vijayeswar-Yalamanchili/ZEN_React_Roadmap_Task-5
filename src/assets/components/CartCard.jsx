@@ -39,9 +39,9 @@ function CartCard({product,setProduct}) {
                                         <div className='d-flex justify-content-between align-items-center'>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                             <div className='d-flex flex-row justify-content-between align-items-center'>
-                                                <button type="button" className='btn btn-danger' onClick={()=>{removeQuantity()}}>-</button>
+                                                <button type="button" className='btn btn-outline-danger' onClick={()=>{removeQuantity()}}>-</button>
                                                 <div className='py-1 quantityText'>{quantity}</div>
-                                                <button type="button" className='btn btn-success' onClick={()=>{addQuantity()}}>+</button>
+                                                <button type="button" className='btn btn-outline-success' onClick={()=>{addQuantity()}}>+</button>
                                             </div>
                                         </div>
                                     </div>
