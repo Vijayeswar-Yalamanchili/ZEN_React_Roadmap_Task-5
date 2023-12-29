@@ -32,7 +32,7 @@ function CartCard({product,setProduct}) {
                                         </div>
                                         <div className='d-flex justify-content-between align-items-center'>
                                             <p className="card-text">Brand : {e.brand}</p>
-                                            <p className="card-text text-muted">Discount Offer : {e.discountPercentage}%</p>
+                                            <p className="card-text text-success ">Discount Offer : {e.discountPercentage}%</p>
                                         </div>
                                         <p className="card-text">{e.description}</p>
                                         <p className="card-text">Rating : {e.rating}/5</p>
