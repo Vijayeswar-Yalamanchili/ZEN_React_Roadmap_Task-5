@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import { UserContext } from '../App';
+import { UserContext } from '../utils/UserContextComponent'
 
 function CartCard() {
     let {product,setProduct} = useContext(UserContext)
