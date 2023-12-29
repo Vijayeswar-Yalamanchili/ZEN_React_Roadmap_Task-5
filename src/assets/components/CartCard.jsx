@@ -64,6 +64,7 @@ function CartCard({product,setProduct}) {
                                             <h5 className="card-text">${e.price * quantity}</h5>
                                         </div>
                                     </div>
+                                    <button type='button'className='btn btn-primary float-end my-3'>Proceed to pay</button>
                                 </div>
                             </div>
                         </div>                      
