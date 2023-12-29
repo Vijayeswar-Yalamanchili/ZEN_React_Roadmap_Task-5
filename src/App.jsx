@@ -75,9 +75,9 @@ function App() {
 
   return <>
     <UserContext.Provider value={{product, setProduct}}>
-    <div className="container my-5">
-    <CartCard/>
-    </div>
+      <div className="container my-5">
+        <CartCard/>
+      </div>
     </UserContext.Provider>
   </>
 }
