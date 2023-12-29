@@ -1,6 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { UserContext } from '../App';
 
-function CartCard({product,setProduct}) {
+function CartCard() {
+    let {product,setProduct} = useContext(UserContext)
     return <>
         <div className="container">
             {

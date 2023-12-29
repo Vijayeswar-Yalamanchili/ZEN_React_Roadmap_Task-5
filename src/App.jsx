@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import CartCard from './components/CartCard'
 
+export const UserContext = React.createContext()
+
 function App() {
   
   const [product, setProduct] = useState([
@@ -72,9 +74,11 @@ function App() {
   ])
 
   return <>
+    <UserContext.Provider value={{product, setProduct}}>
     <div className="container my-5">
-    <CartCard product={product} setProduct={setProduct}/>
+    <CartCard/>
     </div>
+    </UserContext.Provider>
   </>
 }
 
