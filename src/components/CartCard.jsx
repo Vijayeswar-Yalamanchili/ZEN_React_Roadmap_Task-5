@@ -4,7 +4,7 @@ function CartCard({product,setProduct}) {
     return <>
         <div className="container">
             {
-                product.map((e)=>{
+                product.map((e,i)=>{
 
                     const discountPrice = Math.round(e.price * (e.discountPercentage/100))
                     const [quantity, setQuantity] = useState(1);

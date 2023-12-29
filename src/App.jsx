@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import CartCard from './assets/components/CartCard'
+import CartCard from './components/CartCard'
 
 function App() {
   
