@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import CartCard from './assets/components/CartCard'
 
 function App() {
+  
   const [product, setProduct] = useState([
     {
       "id": 1,
@@ -69,6 +70,7 @@ function App() {
       "image": "https://i.dummyjson.com/data/products/5/3.jpg"
   }
   ])
+
   return <>
     <div className="container my-5">
     <CartCard product={product} setProduct={setProduct}/>
