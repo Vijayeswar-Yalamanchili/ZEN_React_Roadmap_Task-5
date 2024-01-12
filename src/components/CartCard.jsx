@@ -9,6 +9,8 @@ function CartCard() {
                 product.map((e,i)=>{
 
                     const discountPrice = Math.round(e.price * (e.discountPercentage/100))
+                    const finalPrice = e.price - discountPrice
+
                     const [quantity, setQuantity] = useState(1);
 
                     const addQuantity = () => {
@@ -59,11 +61,11 @@ function CartCard() {
                                         </div>
                                         <div className='d-flex justify-content-between align-items-center'>
                                             Final Price (Price - Discount) : 
-                                            <p className="card-text">${e.price - discountPrice}</p>
+                                            <p className="card-text">${finalPrice}</p>
                                         </div>
                                         <div className='d-flex justify-content-between align-items-center'>
                                             Total Amount (Final price * Quantity) : 
-                                            <h5 className="card-text">${e.price * quantity}</h5>
+                                            <h5 className="card-text">${finalPrice * quantity}</h5>
                                         </div>
                                         </div>
                                         <button type='button'className='btn btn-primary float-end my-3'>Proceed to pay</button>
